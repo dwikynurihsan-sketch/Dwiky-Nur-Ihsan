@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<link rel="stylesheet" href="CV.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Dwiky Nur Ihsan</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #e9ecef;
+            padding: 30px;
+        }
+
+        .cv {
+            max-width: 900px;
+            margin: auto;
+            background-color: white;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Bagian kiri */
+        .sidebar {
+            background-color: #1f2937;
+            color: white;
+            padding: 30px 25px;
+        }
+
+        .foto {
+            width: 140px;
+            height: 140px;
+            background-color: #d1d5db;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #374151;
+            font-size: 14px;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .sidebar h3 {
+            margin-top: 25px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #60a5fa;
+            padding-bottom: 5px;
+        }
+
+        .sidebar p {
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .skill {
+            margin-bottom: 10px;
+        }
+
+        /* Bagian kanan */
+        .content {
+            padding: 35px;
+        }
+
+        .content h1 {
+            font-size: 35px;
+            color: #1f2937;
+        }
+
+        .content .job {
+            color: #2563eb;
+            font-size: 18px;
+            margin-top: 5px;
+            margin-bottom: 25px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section h2 {
+            color: #2563eb;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 7px;
+            margin-bottom: 15px;
+        }
+
+        .section p {
+            line-height: 1.7;
+            color: #444;
+        }
+
+        .education,
+        .experience {
+            margin-bottom: 15px;
+        }
+
+        .education h3,
+        .experience h3 {
+            color: #222;
+        }
+
+        .date {
+            color: #2563eb;
+            font-size: 14px;
+            margin: 4px 0;
+        }
+
+        ul {
+            padding-left: 20px;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        /* Tampilan HP */
+        @media (max-width: 700px) {
+            body {
+                padding: 10px;
+            }
+
+            .cv {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                text-align: center;
+            }
+
+            .content {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cv">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="foto">
+                <img src="Foto profil.jpeg" alt="Foto Profil">
+            </div>
+
+            <h2>Dwiky Nur Ihsan</h2>
+
+            <h3>Kontak</h3>
+            <p>
+                📞 081290566340<br>
+                📧 dwiky@email.com<br>
+                📍 Ponorogo, Jawa Timur
+            </p>
+
+            <h3>Keahlian</h3>
+            <p class="skill">HTML & CSS</p>
+            <p class="skill">C++</p>
+            <p class="skill">Microsoft Word</p>
+            <p class="skill">Microsoft PowerPoint</p>
+            <p class="skill">Basic Programming</p>
+
+            <h3>Bahasa</h3>
+            <p>
+                Bahasa Indonesia<br>
+                Bahasa Inggris
+            </p>
+
+        </aside>
+
+
+        <!-- KONTEN UTAMA -->
+        <main class="content">
+
+            <h1>Dwiky Nur Ihsan</h1>
+            <p class="job">Mahasiswa Teknik Informatika</p>
+
+            <section class="section">
+                <h2>Profil</h2>
+                <p>
+                    Saya adalah mahasiswa Teknik Informatika yang memiliki
+                    ketertarikan pada bidang teknologi, pemrograman, dan
+                    pengembangan website. Saya memiliki semangat untuk
+                    mempelajari teknologi baru dan mengembangkan kemampuan
+                    dalam bidang IT.
+                </p>
+            </section>
+
+            <section class="section">
+                <h2>Pendidikan</h2>
+
+                <div class="education">
+                    <h3>Universitas Muhammadiyah Ponorogo</h3>
+                    <p class="date">2025 - Sekarang</p>
+                    <p>Program Studi Teknik Informatika</p>
+                </div>
+
+                <div class="education">
+                    <h3>SMA / SMK</h3>
+                    <p class="date">2022 - 2025</p>
+                    <p>Pendidikan Menengah</p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Pengalaman / Proyek</h2>
+
+                <div class="experience">
+                    <h3>Proyek Website Sederhana</h3>
+                    <p class="date">2026</p>
+                    <ul>
+                        <li>Membuat halaman website menggunakan HTML.</li>
+                        <li>Menggunakan CSS untuk mengatur tampilan website.</li>
+                        <li>Membuat layout website yang responsif.</li>
+                    </ul>
+                </div>
+
+                <div class="experience">
+                    <h3>Proyek Pemrograman C++</h3>
+                    <p class="date">2026</p>
+                    <ul>
+                        <li>Mempelajari dasar-dasar bahasa C++.</li>
+                        <li>Menggunakan percabangan dan perulangan.</li>
+                        <li>Mempelajari array dan function.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Hobi</h2>
+                <p>
+                    Belajar teknologi, pemrograman, bermain game,
+                    dan mempelajari hal-hal baru.
+                </p>
+            </section>
+
+        </main>
+</body>
+</html>
