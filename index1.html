@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tebak Kata</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+  <main class="papan">
+
+    <header class="kepala">
+      <p class="label-kategori">Kategori</p>
+      <h1 id="kategori">Memuat&hellip;</h1>
+    </header>
+
+    <section class="area-kata" aria-label="Kata yang ditebak">
+      <div id="ubin-kata" class="ubin-kata"></div>
+    </section>
+
+    <section class="status">
+      <div class="nyawa">
+        <span class="label-status">Kesempatan tersisa</span>
+        <div id="titik-nyawa" class="titik-nyawa"></div>
+      </div>
+      <div class="skor">
+        <span class="skor-item">Menang <strong id="skor-menang">0</strong></span>
+        <span class="skor-item">Kalah <strong id="skor-kalah">0</strong></span>
+      </div>
+    </section>
+
+    <p id="pesan" class="pesan" aria-live="polite">Tebak huruf untuk mengungkap kata!</p>
+
+    <section id="keyboard" class="keyboard" aria-label="Papan huruf"></section>
+
+    <button id="btn-baru" class="btn-baru" type="button">Kata Baru</button>
+
+  </main>
+
+  <script src="script1.js"></script>
+</body>
+</html>
